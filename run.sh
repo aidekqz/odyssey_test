@@ -13,4 +13,4 @@ pgrep odyssey
 psql "host=127.0.0.1 port=6432 user=postgres password=123456 dbname=postgres" -c "SELECT 1" && echo "OK"
 kill -s HUP $(pgrep odyssey)
 psql "host=127.0.0.1 port=6432 user=postgres password=123456 dbname=postgres" -c "SELECT 1" || echo "Failed"
-ls -alht /var/lib/apport/coredump/
+ls -alht /var/lib/apport/coredump/*
